@@ -1,0 +1,342 @@
+.ofertas {
+  position: relative;
+  overflow: hidden;
+
+  padding: 110px 24px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #172033 100%
+    );
+
+  color: #ffffff;
+}
+
+.ofertas-container {
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.ofertas-conteudo {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.ofertas-conteudo h2 {
+  margin: 0 0 20px;
+
+  font-family: 'Fredoka', sans-serif;
+
+  font-size: clamp(34px, 5vw, 48px);
+
+  font-weight: 600;
+
+  line-height: 1.15;
+
+  color: #ffffff;
+}
+
+.ofertas-conteudo p {
+  margin: 0;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.90);
+}
+
+/* =========================
+   VERSÍCULO
+========================= */
+
+.ofertas-versiculo {
+  margin: 55px 0 36px;
+
+  padding: 28px;
+
+  border: 1px solid rgba(255, 255, 255, 0.20);
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(8px);
+}
+
+.ofertas-versiculo blockquote {
+  margin: 0;
+
+  font-family: 'Fredoka', sans-serif;
+
+  font-size: 18px;
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  line-height: 1.7;
+
+  color: #ffffff;
+}
+
+.ofertas-versiculo span {
+  display: block;
+
+  margin-top: 14px;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 14px;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* =========================
+   CARD DE DOAÇÃO
+========================= */
+
+.ofertas-card {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  padding: 24px;
+
+  border-radius: 24px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.20);
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.oferta-botao {
+  width: 100%;
+
+  min-height: 70px;
+
+  padding: 12px 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  border: 1px solid #dce4ef;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  color: #172033;
+
+  font-family: 'Inter', sans-serif;
+
+  text-decoration: none;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.oferta-botao:hover {
+  transform: translateY(-2px);
+
+  border-color: #bcd2ee;
+
+  background: #f9fbff;
+
+  box-shadow:
+    0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================
+   ÍCONE
+========================= */
+
+.oferta-icone {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: #eaf2fd;
+
+  color: #2457a6;
+}
+
+.oferta-icone svg {
+  width: 21px;
+  height: 21px;
+}
+
+/* =========================
+   TEXTO DO BOTÃO
+========================= */
+
+.oferta-texto {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.oferta-texto strong {
+  font-family: 'Inter', sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #172033;
+}
+
+.oferta-texto small {
+  font-family: 'Inter', sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  color: #64748b;
+}
+
+/* =========================
+   SEGURANÇA
+========================= */
+
+.oferta-seguranca {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 4px;
+
+  padding: 10px 8px 2px;
+
+  text-align: center;
+}
+
+.oferta-seguranca-icone {
+  width: 18px;
+  height: 18px;
+
+  flex-shrink: 0;
+
+  color: #2457a6;
+}
+
+.oferta-seguranca p {
+  margin: 0;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  color: #7b8798;
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+  .ofertas {
+    padding: 80px 16px;
+  }
+
+  .ofertas-conteudo h2 {
+    font-size: 34px;
+  }
+
+  .ofertas-conteudo p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .ofertas-versiculo {
+    margin: 40px 0 28px;
+
+    padding: 24px 20px;
+  }
+
+  .ofertas-versiculo blockquote {
+    font-size: 16px;
+
+    line-height: 1.6;
+  }
+
+  .ofertas-versiculo span {
+    font-size: 13px;
+  }
+
+  .ofertas-card {
+    padding: 18px;
+
+    border-radius: 20px;
+  }
+
+  .oferta-botao {
+    min-height: 66px;
+
+    padding: 10px 14px;
+
+    gap: 13px;
+  }
+
+  .oferta-icone {
+    width: 38px;
+    height: 38px;
+  }
+
+  .oferta-seguranca {
+    padding-top: 8px;
+  }
+
+  .oferta-seguranca p {
+    font-size: 10.5px;
+  }
+}

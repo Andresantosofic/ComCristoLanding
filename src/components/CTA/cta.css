@@ -1,0 +1,180 @@
+.cta-final {
+  padding: 110px 24px;
+
+  background: #172033;
+
+  color: #ffffff;
+}
+
+.cta-final-container {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.cta-final-label {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+
+  color: #9dbce8;
+}
+
+.cta-final h2 {
+  margin: 0;
+
+  font-family: 'Fredoka', sans-serif;
+
+  font-size: clamp(38px, 6vw, 58px);
+
+  font-weight: 500;
+
+  line-height: 1.15;
+
+  color: #ffffff;
+}
+
+.cta-final p {
+  max-width: 600px;
+
+  margin: 24px auto 34px;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  line-height: 1.7;
+
+  color: #c7cfdd;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.cta-final-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 14px;
+
+  width: min(100%, 445px);
+
+  margin: 0 auto;
+}
+
+.cta-final-button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  min-height: 52px;
+
+  padding: 0 24px;
+
+  border-radius: 999px;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.cta-button-icon {
+  width: 20px;
+  height: 20px;
+
+  flex-shrink: 0;
+
+  margin-right: 10px;
+}
+
+/* =========================
+   GOOGLE PLAY
+========================= */
+
+.cta-final-button-primary {
+  background: #ffffff;
+
+  color: #2457a6;
+
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.cta-final-button-primary:hover {
+  transform: translateY(-2px);
+
+  background: #f5f9ff;
+
+  box-shadow:
+    0 16px 34px rgba(0, 0, 0, 0.24);
+}
+
+/* =========================
+   IOS
+========================= */
+
+.cta-final-button-secondary {
+  background: transparent;
+
+  color: #ffffff;
+
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+}
+
+.cta-final-button-secondary:hover {
+  transform: translateY(-2px);
+
+  background: rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+  .cta-final {
+    padding: 80px 20px;
+  }
+
+  .cta-final h2 {
+    font-size: 38px;
+  }
+
+  .cta-final p {
+    font-size: 14px;
+  }
+
+  .cta-final-actions {
+    width: 100%;
+  }
+
+  .cta-final-button {
+    width: 100%;
+  }
+}

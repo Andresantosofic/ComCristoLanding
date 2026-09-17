@@ -1,0 +1,254 @@
+.duvidas {
+  padding: 100px 24px;
+
+  background: #f5f8fc;
+}
+
+.duvidas-container {
+  max-width: 950px;
+
+  margin: 0 auto;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.duvidas-header {
+  margin-bottom: 45px;
+
+  text-align: center;
+}
+
+.duvidas-header h2 {
+  margin: 0 0 10px;
+
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  color: #172033;
+}
+
+.duvidas-header p {
+  margin: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.6;
+
+  color: #64748b;
+}
+
+/* =========================
+   LISTA
+========================= */
+
+.duvidas-lista {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.duvida {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e5ebf3;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 4px 15px rgba(15, 23, 42, 0.03);
+
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.duvida-aberta {
+  border-color: #d7e4f7;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+/* =========================
+   PERGUNTA
+========================= */
+
+.duvida-pergunta {
+  width: 100%;
+
+  min-height: 72px;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #172033;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.duvida-pergunta > span:first-child {
+  flex: 1;
+}
+
+.duvida-icone {
+  width: 24px;
+  height: 24px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eaf2fd;
+
+  color: #2864e6;
+
+  font-size: 19px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.duvida-aberta .duvida-icone {
+  background: #2864e6;
+
+  color: #ffffff;
+
+  transform: rotate(180deg);
+}
+
+/* =========================
+   RESPOSTA
+========================= */
+
+.duvida-resposta {
+  display: grid;
+
+  grid-template-rows: 0fr;
+
+  opacity: 0;
+
+  transition:
+    grid-template-rows 0.4s ease,
+    opacity 0.3s ease;
+}
+
+.duvida-aberta .duvida-resposta {
+  grid-template-rows: 1fr;
+
+  opacity: 1;
+}
+
+.duvida-resposta-conteudo {
+  overflow: hidden;
+}
+
+.duvida-resposta p {
+  margin: 0;
+
+  padding: 0 20px 22px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.duvida-pergunta:hover .duvida-icone {
+  background: #dceafd;
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+  .duvidas {
+    padding: 70px 16px;
+  }
+
+  .duvidas-header {
+    margin-bottom: 32px;
+  }
+
+  .duvidas-header h2 {
+    font-size: 32px;
+  }
+
+  .duvidas-header p {
+    font-size: 14px;
+  }
+
+  .duvidas-lista {
+    gap: 10px;
+  }
+
+  .duvida {
+    border-radius: 16px;
+  }
+
+  .duvida-pergunta {
+    min-height: 64px;
+
+    padding: 16px;
+
+    font-size: 14px;
+  }
+
+  .duvida-icone {
+    width: 23px;
+    height: 23px;
+
+    font-size: 18px;
+  }
+
+  .duvida-resposta p {
+    padding: 0 16px 18px;
+
+    font-size: 14px;
+    line-height: 1.65;
+  }
+}

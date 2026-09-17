@@ -1,0 +1,106 @@
+.destaque-versiculo {
+  position: relative;
+  overflow: hidden;
+
+  padding: 100px 24px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #092d73 0%,
+      #16458c 45%,
+      #4c8bc7 100%
+    );
+
+  color: #ffffff;
+}
+
+.destaque-versiculo-container {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.destaque-versiculo-label {
+  display: inline-block;
+
+  margin-bottom: 24px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  color: #b9d7ff;
+}
+
+.destaque-versiculo blockquote {
+  margin: 0;
+
+  font-family: 'Fredoka', sans-serif;
+
+  font-size: clamp(30px, 5vw, 52px);
+
+  font-weight: 500;
+
+  line-height: 1.2;
+
+  color: #ffffff;
+}
+
+.destaque-versiculo-referencia {
+  margin: 24px 0 0;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #b9d7ff;
+}
+
+.destaque-versiculo-texto {
+  max-width: 680px;
+
+  margin: 28px auto 0;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+  .destaque-versiculo {
+    padding: 70px 20px;
+  }
+
+  .destaque-versiculo-label {
+    font-size: 11px;
+  }
+
+  .destaque-versiculo blockquote {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .destaque-versiculo-referencia {
+    font-size: 15px;
+  }
+
+  .destaque-versiculo-texto {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}

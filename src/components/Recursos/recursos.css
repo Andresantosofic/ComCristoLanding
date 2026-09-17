@@ -1,0 +1,273 @@
+.recursos {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      #092d73 0%,
+      #16458c 45%,
+      #4c8bc7 100%
+    );
+
+  padding: 100px 0;
+
+  color: #ffffff;
+}
+
+.recursos-container {
+  width: min(1140px, calc(100% - 56px));
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+}
+
+/* =========================
+   DESTAQUE DOS RECURSOS
+========================= */
+
+.recursos-destaque {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  padding: 10px 20px 0;
+
+  text-align: center;
+}
+
+.recursos-destaque h2 {
+  margin: 0;
+
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(38px, 5vw, 58px);
+  font-weight: 500;
+
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+
+  color: #ffffff;
+}
+
+.recursos-destaque h2 span {
+  display: inline-block;
+
+  padding: 2px 10px;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #2864e6;
+}
+
+/* =========================
+   LINHA DO RECURSO
+========================= */
+
+.recurso-row {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+.recurso-row-reverse {
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+.recurso-row-reverse .recurso-media {
+  order: 2;
+}
+
+.recurso-row-reverse .recurso-content {
+  order: 1;
+}
+
+/* =========================
+   IMAGEM
+========================= */
+
+.recurso-media {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.recurso-phone {
+  width: 230px;
+
+  padding: 9px;
+
+  background: linear-gradient(
+    160deg,
+    #ffffff,
+    #eaf1fb
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  border-radius: 34px;
+
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.recurso-phone img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 25px;
+
+  aspect-ratio: 230 / 450;
+
+  object-fit: cover;
+  object-position: top;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.recurso-content {
+  max-width: 500px;
+}
+
+.recurso-tag {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #b9d7ff;
+
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.recurso-content h2 {
+  margin: 0 0 14px;
+
+  color: #ffffff;
+
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(25px, 3vw, 34px);
+
+  font-weight: 600;
+
+  line-height: 1.25;
+
+  letter-spacing: -0.5px;
+}
+
+.recurso-content p {
+  margin: 0;
+
+  max-width: 44ch;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  line-height: 1.65;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .recursos {
+    padding: 80px 0;
+  }
+
+  .recursos-container {
+    gap: 85px;
+  }
+
+  .recurso-row,
+  .recurso-row-reverse {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .recurso-row .recurso-media,
+  .recurso-row-reverse .recurso-media {
+    order: 1;
+  }
+
+  .recurso-row .recurso-content,
+  .recurso-row-reverse .recurso-content {
+    order: 2;
+  }
+
+  .recurso-content {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .recurso-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 560px) {
+  .recursos {
+    padding: 70px 0;
+  }
+
+  .recursos-container {
+    width: min(100% - 32px, 1140px);
+
+    gap: 76px;
+  }
+
+  .recursos-destaque {
+    padding: 5px 16px 0;
+  }
+
+  .recursos-destaque h2 {
+    font-size: 38px;
+
+    line-height: 1.08;
+  }
+
+  .recursos-destaque h2 span {
+    padding: 1px 7px;
+  }
+
+  .recurso-row {
+    gap: 30px;
+  }
+
+  .recurso-phone {
+    width: 210px;
+  }
+
+  .recurso-content h2 {
+    font-size: 25px;
+  }
+
+  .recurso-content p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}

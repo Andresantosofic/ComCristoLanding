@@ -1,0 +1,89 @@
+.sobre {
+  padding: 110px 24px;
+
+  background: #ffffff;
+}
+
+.sobre-container {
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+.sobre-conteudo {
+  max-width: 850px;
+}
+
+.sobre-label {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  color: #2457a6;
+}
+
+.sobre h2 {
+  margin: 0 0 28px;
+
+  font-family: 'Fredoka', sans-serif;
+
+  font-size: clamp(34px, 5vw, 52px);
+
+  font-weight: 500;
+
+  line-height: 1.15;
+
+  color: #172033;
+}
+
+.sobre-conteudo p {
+  margin: 0 0 18px;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  line-height: 1.8;
+
+  color: #667085;
+}
+
+.sobre-conteudo p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 800px) {
+  .sobre {
+    padding: 80px 20px;
+  }
+
+  .sobre-conteudo {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .sobre {
+    padding: 70px 20px;
+  }
+
+  .sobre h2 {
+    font-size: 34px;
+  }
+
+  .sobre-conteudo p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
