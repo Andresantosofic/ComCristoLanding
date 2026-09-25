@@ -2,7 +2,6 @@ import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Pensamentos from './components/Pensamentos/Pensamentos'
 import Recursos from './components/Recursos/Recursos'
-import RecursosRapidos from './components/RecursosRapidos/RecursosRapidos'
 import DestaqueVersiculo from './components/DestaqueVersiculo/DestaqueVersiculo'
 import Ofertas from './components/Ofertas/Ofertas'
 import Sobre from './components/Sobre/Sobre'
@@ -19,7 +18,6 @@ function App() {
         <Hero />
         <Pensamentos />
         <Recursos />
-        <RecursosRapidos />
         <DestaqueVersiculo />
         <Ofertas />
         <Sobre />

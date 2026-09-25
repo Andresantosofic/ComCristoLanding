@@ -14,12 +14,12 @@
   border-radius: 28px;
 
   background:
-    linear-gradient(
-      135deg,
-      #092d73 0%,
-      #1d579e 50%,
-      #4fa8e8 100%
-    );
+  linear-gradient(
+    180deg,
+    #363B6C 0%,
+    #706FA8 45%,
+    #A8A3E3 100%
+  );
 
   color: #ffffff;
 

@@ -3,12 +3,12 @@
   overflow: hidden;
 
   background:
-    linear-gradient(
-      180deg,
-      #092d73 0%,
-      #16458c 45%,
-      #4c8bc7 100%
-    );
+  linear-gradient(
+    180deg,
+    #363B6C 0%,
+    #706FA8 45%,
+    #A8A3E3 100%
+  );
 
   padding: 100px 0;
 
